@@ -45,13 +45,23 @@ public class Player : MonoBehaviour
             SetRandomColor();
             Destroy(collision.gameObject);
         }
+        else if (collision.tag == "Score")
+        {
+            return;
+        }
+        else if (collision.tag == "Key")
+        {
+            return;
+        }
         else if (collision.tag != currentColor)
         {
             Debug.Log("Game Over");
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-    }
+     }
+
+ 
 
     void SetRandomColor()
     {
@@ -92,6 +102,7 @@ public class Player : MonoBehaviour
     {
         settings.SetActive(false);
     }
+
         
 }
 

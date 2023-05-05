@@ -9,6 +9,8 @@ TagManager:
   - Pink
   - Magenta
   - Changer
+  - Score
+  - Key
   layers:
   - Default
   - TransparentFX
